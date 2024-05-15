@@ -1,4 +1,3 @@
-# Appendix
+# Ekler
 
-The following sections contain reference material you may find useful in your
-Rust journey.
+Aşağıdaki bölümler, Rust yolculuğunuzda faydalı bulabileceğiniz başvuru kaynaklarını içermektedir.

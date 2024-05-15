@@ -1,48 +1,44 @@
-# The Rust Programming Language
+# Rust Programlama Dili
 
-![Build Status](https://github.com/rust-lang/book/workflows/CI/badge.svg)
+![Yapı Durumu](https://github.com/rust-lang/book/workflows/CI/badge.svg)
 
-This repository contains the source of "The Rust Programming Language" book.
+Bu depo, "Rust Programlama Dili" kitabının kaynağını içerir.
 
-[The book is available in dead-tree form from No Starch Press][nostarch].
+[Kitap, No Starch Press'ten basılı olarak temin edilebilir][nostarch].
 
 [nostarch]: https://nostarch.com/rust-programming-language-2nd-edition
 
-You can also read the book for free online. Please see the book as shipped with
-the latest [stable], [beta], or [nightly] Rust releases. Be aware that issues
-in those versions may have been fixed in this repository already, as those
-releases are updated less frequently.
+Ayrıca kitabı çevrimiçi olarak ücretsiz okuyabilirsiniz. Lütfen kitap, en son [kararlı] (stable), [beta] veya [gecelik] (nightly) Rust sürümleriyle gönderildiği şekliyle okuyun. Bu sürümlerdeki sorunların bu depoda zaten düzeltilmiş olabileceğini unutmayın, çünkü bu sürümler daha az sıklıkta güncellenmektedir.
 
-[stable]: https://doc.rust-lang.org/stable/book/
+[kararlı]: https://doc.rust-lang.org/stable/book/
 [beta]: https://doc.rust-lang.org/beta/book/
-[nightly]: https://doc.rust-lang.org/nightly/book/
+[gecelik]: https://doc.rust-lang.org/nightly/book/
 
-See the [releases] to download just the code of all the code listings that appear in the book.
+Kitapta yer alan tüm kod örneklerinin sadece kodunu indirmek için [sürümler] kısmına bakın.
 
-[releases]: https://github.com/rust-lang/book/releases
+[sürümler]: https://github.com/rust-lang/book/releases
 
-## Requirements
 
-Building the book requires [mdBook], ideally the same version that
-rust-lang/rust uses in [this file][rust-mdbook]. To get it:
+## Gereksinimler
+
+Kitabı oluşturmak için [mdBook] gereklidir, ideal olarak rust-lang/rust'un [bu dosyada][rust-mdbook] kullandığı sürümle aynı olmalıdır. Bunu edinmek için:
 
 [mdBook]: https://github.com/rust-lang/mdBook
 [rust-mdbook]: https://github.com/rust-lang/rust/blob/master/src/tools/rustbook/Cargo.toml
 
 ```bash
-$ cargo install mdbook --locked --version <version_num>
+$ cargo install mdbook --locked --version <sürüm_numarası>
 ```
 
-## Building
+## Kitabın Oluşturulması
 
-To build the book, type:
+Kitabı oluşturmak için şu komutu yazın:
 
 ```bash
 $ mdbook build
 ```
 
-The output will be in the `book` subdirectory. To check it out, open it in
-your web browser.
+Çıktı `book` alt dizininde olacaktır. Kontrol etmek için, web tarayıcınızda açın.
 
 _Firefox:_
 ```bash
@@ -60,46 +56,31 @@ $ Start-Process "chrome.exe" .\book\index.html  # Windows (PowerShell)
 $ start chrome.exe .\book\index.html            # Windows (Cmd)
 ```
 
-To run the tests:
+Testleri çalıştırmak için:
 
 ```bash
 $ mdbook test
 ```
 
-## Contributing
+## Katkıda Bulunma
 
-We'd love your help! Please see [CONTRIBUTING.md][contrib] to learn about the
-kinds of contributions we're looking for.
+Yardımınıza ihtiyacımız var! Aradığımız katkı türlerini öğrenmek için lütfen [CONTRIBUTING.md][contrib] dosyasına bakın.
 
 [contrib]: https://github.com/rust-lang/book/blob/main/CONTRIBUTING.md
 
-Because the book is [printed][nostarch], and because we want
-to keep the online version of the book close to the print version when
-possible, it may take longer than you're used to for us to address your issue
-or pull request.
+Kitap [basıldığı][nostarch] ve çevrimiçi versiyonunu mümkün olduğunca basılı versiyona yakın tutmak istediğimiz için, sorununuza veya çekme isteğinize cevap vermemiz alıştığınızdan daha uzun sürebilir.
 
-So far, we've been doing a larger revision to coincide with [Rust
-Editions](https://doc.rust-lang.org/edition-guide/). Between those larger
-revisions, we will only be correcting errors. If your issue or pull request
-isn't strictly fixing an error, it might sit until the next time that we're
-working on a large revision: expect on the order of months or years. Thank you
-for your patience!
+Şimdiye kadar, [Rust Sürümleri](https://doc.rust-lang.org/edition-guide/) ile örtüşen daha büyük revizyonlar yapıyoruz. Bu büyük revizyonlar arasında, yalnızca hataları düzelteceğiz. Sorununuz veya çekme isteğiniz tam olarak bir hatayı düzeltmiyorsa, bir sonraki büyük revizyon üzerinde çalıştığımız zamana kadar bekleyebilir: bu aylar veya yıllar sürebilir. Sabır gösterdiğiniz için teşekkür ederiz.
 
-### Translations
 
-We'd love help translating the book! See the [Translations] label to join in
-efforts that are currently in progress. Open a new issue to start working on
-a new language! We're waiting on [mdbook support] for multiple languages
-before we merge any in, but feel free to start!
+### Çeviriler
 
-[Translations]: https://github.com/rust-lang/book/issues?q=is%3Aopen+is%3Aissue+label%3ATranslations
-[mdbook support]: https://github.com/rust-lang/mdBook/issues/5
+Kitabın çevirisinde yardıma ihtiyacımız var! Hâlihazırda devam eden çeviri çalışmalarına katılmak için [Çeviriler] etiketine bakın. Yeni bir dil üzerinde çalışmaya başlamak için yeni bir sorun açın! Birden fazla dil desteği için [mdbook desteğini] bekliyoruz, başlamaktan çekinmeyin!
 
-## Spellchecking
+[Çeviriler]: https://github.com/rust-lang/book/issues?q=is%3Aopen+is%3Aissue+label%3ATranslations
+[mdbook desteği]: https://github.com/rust-lang/mdBook/issues/5
 
-To scan source files for spelling errors, you can use the `spellcheck.sh`
-script available in the `ci` directory. It needs a dictionary of valid words,
-which is provided in `ci/dictionary.txt`. If the script produces a false
-positive (say, you used the word `BTreeMap` which the script considers invalid),
-you need to add this word to `ci/dictionary.txt` (keep the sorted order for
-consistency).
+
+## Yazım Denetimi
+
+Kaynak dosyalarının hatalarını taramak için, `ci` dizininde bulunan `spellcheck.sh` scriptini kullanabilirsiniz. Bu scriptin, `ci/dictionary.txt` dosyasında sağlanan geçerli kelimeler sözlüğüne ihtiyacı vardır. Eğer script yanlış bir olumlu sonuç verirse (örneğin, `BTreeMap` kelimesini kullandığınızda script bunu geçersiz olarak değerlendirirse), bu kelimeyi `ci/dictionary.txt` dosyasına eklemeniz gerekir (tutarlılık için alfabetik sırayı koruyun).
